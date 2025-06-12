@@ -1,66 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web devlopment</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>web devlopment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-        <nav>
-            <div class="logo">web dev</div>
-            <div class="hamburger" id="hamburger">
-                &#9776;
-            </div>
-            <div id="bar" class="floating-menu">
-                <ul>
-                    <li><a href="#intro">Launchpad
-                        <span class="tooltip">home sweet home!</span>
-                    </a></li>
-                    <li><a href="#about">Origin Story
-                        <span class="tooltip">Spoiler: I'm still learning, but loving it.</span>
-                    </a></li>
-                    <li><a href="#portfolio">the workshop
-                        <span class="tooltip">A collection of things I've built, broken, and fixed again!</span>
-                    </a></li>
-                    <li><a href="#contact">
-                        Let's Collab!<span class="tooltip">Let's build weird stuff together!</span>
-                    </a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo fonthead">web dev</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div id="bar" class="floating-menu">
+        <ul>
+          <li>
+            <a href="#intro">Launchpad
+              <span class="tooltip">home sweet home!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">Origin Story
+              <span class="tooltip">Spoiler: I'm still learning, but loving it!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services">What I Offer
+              <span class="tooltip">These are the tools in my belt… for now!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project">the workshop
+              <span class="tooltip">A collection of things I've built, broken, and fixed again!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              Let's Collab!<span class="tooltip">Let's build weird stuff together!</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<section id="intro">
-        <div class="intro-left">
-          <h2>Build Your Digital Future</h2>
-          <p>Learning to turn ideas into interactive, beautiful, and functional websites. Focused on clean code, modern design, and real results.</p>
-          <a href="#contact" class="cta-btn">Start a Project</a>
+  <section id="intro">
+    <div class="intro-left">
+      <h2 class="fonthead">Build Your Digital Future</h2>
+      <p>
+        Learning to turn ideas into interactive, beautiful, and functional
+        websites. Focused on clean code, modern design, and real results.
+      </p>
+      <a href="#contact" class="cta-btn">Start a Project</a>
+    </div>
+    <div class="intro-right">
+      <p class="quote">"Every great developer was once a beginner."</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-header">
+      <h3 class="fonthead">that's me!</h3>
+      <hr />
+    </div>
+    <div class="about-left">
+      <p>
+        It didn't start with code — It started with curiosity. There's
+        something exciting about turning ideas into <br />
+        websites that people can actually use and enjoy. For me, coding is
+        where creativity meets problem-solving. <br /><br />
+        Every project is a chance to learn something new, make mistakes, and
+        find better ways to build. This site is my little corner<br />
+        to share what I've made, what I've fixed, and what I'm still figuring
+        out.
+      </p>
+    </div>
+    <div class="about-right">
+      <img src="images/about.jpg" alt="Web developer illustration" />
+    </div>
+  </section>
+
+  <section id="services" aria-label="Service pricing cards" class="cards-section">
+    <h3 class="fonthead">Services & Pricing</h3>
+    <hr />
+    <div class="cards">
+      <!-- Card 1 -->
+      <article class="card web-dev" id="web-development" aria-labelledby="wd-title wd-price" data-aos="fade-up">
+        <div class="card-header" id="wd-title">WEB DEVELOPMENT</div>
+        <div class="card-price" id="wd-price">
+          $1,500<span class="price-duration">/1 Week</span>
         </div>
-        <div class="intro-right">
-          <p class="quote">"Every great developer was once a beginner."</p>
+        <div class="card-content">
+          <ul>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Web pages (home, about us, services, others menu &amp; sub-menu pages)</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> up to 10 pages</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Slider / Banner Image</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> CMS Integration</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Custom Theme Design 1 Revision</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Photo Gallery/ Video Gallery</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Mobile Responsive</li>
+          </ul>
         </div>
-</section>
-<section id="about">
-        <h3>that's me!</h3>
-        <hr>
-        <div class="about-left">
-        <p>It didn't start with code — It started with curiosity.
-            There's something exciting about turning ideas into <br>
-            websites that people can actually use and enjoy.
-            For me, coding is where creativity meets problem-solving.
-            <br><br>
-            Every project is a chance to learn something new, make mistakes,
-            and find better ways to build. This site is my little corner<br>
-            to share what I've made, what I've fixed, and what I'm still figuring out.</p>
+      </article>
+  
+      <!-- Card 2 -->
+      <article class="card ecommerce" id="ecommerce" aria-labelledby="ec-title ec-price" data-aos="fade-up">
+        <div class="card-header" id="ec-title">ECOMMERCE</div>
+        <div class="card-price" id="ec-price">
+          $2,888<span class="price-duration">/2 Weeks</span>
         </div>
-        <div class="about-right">
-                <img src="images/about.jpg" alt="Web developer illustration">
-              </div>
-</section>
-    
-    <script src="java.js"></script>
+        <div class="card-content">
+          <ul>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Custom Layout Design &amp; Theme</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Multiple Slides / Image Banners</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Product-sub Categories</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Up to 8 and 50 products insertions</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Shopping Cart / Order Now</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Product Reports coupon code/ Promo/Rewards</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Limited offers/Sales/Promo Price</li>
+          </ul>
+        </div>
+      </article>
+  
+      <!-- Card 3 -->
+      <article class="card startup-apps" id="startup-apps" aria-labelledby="sa-title sa-price" data-aos="fade-up">
+        <div class="card-header" id="sa-title">
+          STARTUP APPS
+          <div class="sub-header">ANDROID</div>
+        </div>
+        <div class="card-price" id="sa-price">
+          <small>From</small>
+          <span>$6,000</span>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Good for Info Apps</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Splash Screen- Branding Logo</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> User friendly Custom-Layout</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Upto 5 Navigation Tabs</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Multi-Device- Smartphones &amp; Tablets</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Google Play Setup</li>
+            <li><span class="material-icons" aria-hidden="true">check_circle</span> Single Language</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize AOS after page loads
+  </script>
+
+  <script src="java.js"></script>
 </body>
 </html>
