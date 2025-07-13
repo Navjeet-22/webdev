@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>web devlopment</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Web Development</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,45 +14,28 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <nav>
       <div class="logo fonthead">web dev</div>
-      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+      </div>
       <div id="bar" class="floating-menu">
         <ul>
-          <li>
-            <a href="#intro">Launchpad
-              <span class="tooltip">home sweet home!</span>
-            </a>
-          </li>
-          <li>
-            <a href="#about">Origin Story
-              <span class="tooltip">Spoiler: I'm still learning, but loving it!</span>
-            </a>
-          </li>
-          <li>
-            <a href="#services">What I Offer
-              <span class="tooltip">These are the tools in my belt… for now!</span>
-            </a>
-          </li>
-          <li>
-            <a href="#project">the workshop
-              <span class="tooltip">A collection of things I've built, broken, and fixed again!</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              Let's Collab!<span class="tooltip">Let's build weird stuff together!</span>
-            </a>
-          </li>
+          <li><a href="#intro">Launchpad <span class="tooltip">home sweet home!</span></a></li>
+          <li><a href="#about">Origin Story <span class="tooltip">Spoiler: I'm still learning, but loving it!</span></a></li>
+          <li><a href="#services">What I Offer <span class="tooltip">These are the tools in my belt… for now!</span></a></li>
+          <li><a href="#projects">The Workshop <span class="tooltip">A collection of things I've built, broken, and fixed again!</span></a></li>
+          <li><a href="#contact">Let's Collab! <span class="tooltip">Let's build weird stuff together!</span></a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <section id="intro">
-    <div class="intro-left">
+    <div class="intro-left scroll-animate-left">
       <h2 class="fonthead">Build Your Digital Future</h2>
       <p>
         Learning to turn ideas into interactive, beautiful, and functional
@@ -60,103 +43,129 @@
       </p>
       <a href="#contact" class="cta-btn">Start a Project</a>
     </div>
-    <div class="intro-right">
+    <div class="intro-right scroll-animate-right">
       <p class="quote">"Every great developer was once a beginner."</p>
     </div>
   </section>
 
   <section id="about">
-    <div class="section-header">
+    <div class="section-header scroll-animate">
       <h3 class="fonthead">that's me!</h3>
       <hr />
     </div>
-    <div class="about-left">
+    <div class="about-left scroll-animate-left">
       <p>
-        It didn't start with code — It started with curiosity. There's
-        something exciting about turning ideas into <br />
-        websites that people can actually use and enjoy. For me, coding is
-        where creativity meets problem-solving. <br /><br />
-        Every project is a chance to learn something new, make mistakes, and
-        find better ways to build. This site is my little corner<br />
-        to share what I've made, what I've fixed, and what I'm still figuring
-        out.
+        We're a team of passionate web developers who craft custom websites that are not only beautiful but built to perform.<br>
+        Our goal is to create clean, user-friendly sites that reflect your brand and drive real results.<br><br>
+        With a strong mix of design and coding skills, we build websites that look great, load fast,
+        easily customizable, and guide users effortlessly.<br><br>
+        Whether you're just starting out or scaling up, we're here to help you grow online with tailored solutions and close collaboration.
       </p>
+      <a href="pages/about.html" class="read-more-link">Read More →</a>
     </div>
-    <div class="about-right">
+
+    <div class="about-right scroll-animate-right">
       <img src="images/about.jpg" alt="Web developer illustration" />
     </div>
   </section>
 
   <section id="services" aria-label="Service pricing cards" class="cards-section">
-    <h3 class="fonthead">Services & Pricing</h3>
+    <h3 class="fonthead scroll-animate">Services & Pricing</h3>
     <hr />
     <div class="cards">
       <!-- Card 1 -->
-      <article class="card web-dev" id="web-development" aria-labelledby="wd-title wd-price" data-aos="fade-up">
-        <div class="card-header" id="wd-title">WEB DEVELOPMENT</div>
-        <div class="card-price" id="wd-price">
-          $1,500<span class="price-duration">/1 Week</span>
-        </div>
+      <article class="card web-dev scroll-animate-scale" id="web-development" data-aos="fade-up">
+        <div class="card-header">BASIC WEBSITE</div>
+        <div class="card-price">₹10K-30K<span class="price-duration">/1-3 Weeks</span></div>
         <div class="card-content">
           <ul>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Web pages (home, about us, services, others menu &amp; sub-menu pages)</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> up to 10 pages</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Slider / Banner Image</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> CMS Integration</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Custom Theme Design 1 Revision</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Photo Gallery/ Video Gallery</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Mobile Responsive</li>
+            <li><span class="material-icons">check_circle</span> Custom Layout Design & Theme</li>
+            <li><span class="material-icons">check_circle</span> Static 5-10 pages</li>
+            <li><span class="material-icons">check_circle</span> Banner Image</li>
+            <li><span class="material-icons">check_circle</span> Domain registration</li>
+            <li><span class="material-icons">check_circle</span> Web hosting</li>
+            <li><span class="material-icons">check_circle</span> Mobile Responsive</li>
           </ul>
         </div>
       </article>
-  
+
       <!-- Card 2 -->
-      <article class="card ecommerce" id="ecommerce" aria-labelledby="ec-title ec-price" data-aos="fade-up">
-        <div class="card-header" id="ec-title">ECOMMERCE</div>
-        <div class="card-price" id="ec-price">
-          $2,888<span class="price-duration">/2 Weeks</span>
-        </div>
+      <article class="card ecommerce scroll-animate-scale" id="ecommerce" data-aos="fade-up">
+        <div class="card-header">STANDARD WEBSITE</div>
+        <div class="card-price">₹25K-75K<span class="price-duration">/4-8 Weeks</span></div>
         <div class="card-content">
           <ul>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Custom Layout Design &amp; Theme</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Multiple Slides / Image Banners</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Product-sub Categories</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Up to 8 and 50 products insertions</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Shopping Cart / Order Now</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Product Reports coupon code/ Promo/Rewards</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Limited offers/Sales/Promo Price</li>
+            <li><span class="material-icons">check_circle</span> Multiple Slides / Image Banners</li>
+            <li><span class="material-icons">check_circle</span> Product-sub Categories</li>
+            <li><span class="material-icons">check_circle</span> Shopping Cart / Order Now</li>
+            <li><span class="material-icons">check_circle</span> Limited Offers / Promo</li>
           </ul>
         </div>
       </article>
-  
+
       <!-- Card 3 -->
-      <article class="card startup-apps" id="startup-apps" aria-labelledby="sa-title sa-price" data-aos="fade-up">
-        <div class="card-header" id="sa-title">
-          STARTUP APPS
-          <div class="sub-header">ANDROID</div>
-        </div>
-        <div class="card-price" id="sa-price">
-          <small>From</small>
-          <span>$6,000</span>
-        </div>
+      <article class="card startup-apps scroll-animate-scale" id="startup-apps" data-aos="fade-up">
+        <div class="card-header">STARTUP APPS <div class="sub-header">ANDROID</div></div>
+        <div class="card-price"><small>From</small><span>$6,000</span></div>
         <div class="card-content">
           <ul>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Good for Info Apps</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Splash Screen- Branding Logo</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> User friendly Custom-Layout</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Upto 5 Navigation Tabs</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Multi-Device- Smartphones &amp; Tablets</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Google Play Setup</li>
-            <li><span class="material-icons" aria-hidden="true">check_circle</span> Single Language</li>
+            <li><span class="material-icons">check_circle</span> Splash Screen - Branding Logo</li>
+            <li><span class="material-icons">check_circle</span> Upto 5 Navigation Tabs</li>
+            <li><span class="material-icons">check_circle</span> Google Play Setup</li>
           </ul>
         </div>
       </article>
     </div>
   </section>
-  
+
+  <footer class="footer scroll-animate">
+    <div class="footer-container">
+      <div class="footer-brand scroll-animate-left">
+        <h2 class="logo">MyPortfolio</h2>
+        <p class="tagline">Building ideas, one line at a time.</p>
+      </div>
+
+      <div class="footer-links scroll-animate">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li class="footer-dropdown">
+            <a href="#about">About</a>
+            <ul class="footer-submenu">
+              <li><a href="why-us.html">Why Us</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="vision.html">Vision & Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact scroll-animate-right">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Location: India</p>
+        <div class="social-icons">
+          <a href="#"><i class="material-icons">email</i></a>
+          <a href="#"><i class="material-icons">code</i></a>
+          <a href="#"><i class="material-icons">language</i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init(); // Initialize AOS after page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
   </script>
 
   <script src="java.js"></script>
